@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>level_30</title>
+</head>
+<body>
+<script>
+    const person = {
+        name: 'bbh',
+        age: 30,
+        address: {
+            city: 'ChongQing',
+            area: 'NanShan'
+        },
+        title: ['student',{year:2022, title:'GoodStudent'}]
+    }
+    let {name}=person
+    let {age : year}=person
+    let {address : {city}}=person
+    let {address : {area:mountain}}=person
+    let {title:[title1]}=person
+    let {title:[,{title :title2}]}=person
+    let a,b,c;
+    let {title:[,{title :[a,b,,c]}]}=person
+    title3=a+b+c;
+
+
+
+
+
+
+    console.log(name) // bbh
+    console.log(year) // 30
+    console.log(city) // ChongQing
+    console.log(mountain) // NanShan //这里没有写错，就是要输出NanShan，结合课件
+    console.log(title1) // student
+    console.log(title2) // GoodStudent
+    console.log(title3) // God 结合课件
+</script>
+</body>
+</html>

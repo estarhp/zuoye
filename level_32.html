@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>level_32</title>
+</head>
+<body>
+<script>
+    let title2={'man':'zhongguohaonanren','student':'haoxuesheng'}
+    let person = {
+        name: 'bbh',
+        age: 30,
+        address: {
+            city: 'ChongQing',
+            area: 'NanShan'
+        },
+        title: ['student',{year:2022,title3:'fafa'},title2]
+    }
+
+    let Clone= function (target) {
+        let clone={}
+        for (let x in target) {
+             clone[x]=target[x]
+        }
+        return clone
+    }
+    console.log(Clone(person))
+
+
+    let Deepclone= function (target) {
+
+        if (typeof target ==='object'){
+            //三元表达式判断需要数组还是对象
+            let clone= Array.isArray(target) ? [] : {};
+
+
+            for (const x in target) {
+                clone[x] = Deepclone(target[x])//不断调用Deepclone，创造新的容器，对没有引用的地方浅拷贝
+            }
+            return clone//整个对象中都没有引用，则无法执行到else，需要在完成for 循环后 用return返回深拷贝结果
+        }
+        else return target   //当target不再为一个引用值时，需要返回target 来给上面的代码拿去赋值 或为最终深拷贝的结果
+
+
+    }
+    result=Deepclone(person)
+    
+    title2["man"]='huahuatang'
+    result['title'][2]["man"]='tanghuahua' //检验深拷贝是否成功
+
+
+    console.log(result)
+
+
+
+
+
+</script>
+</body>
+</html>
