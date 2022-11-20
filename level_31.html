@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>level_31</title>
+</head>
+<body>
+<script>
+    function jc_1(p){
+     for (let i=1,sum=1;i<p+1;i++) {
+
+         sum=sum*i;
+     }
+
+        return sum
+    }
+    let jc_2 = function (p) {
+        if (p==1) {
+            return 1
+        }
+        else return p*jc_2(p-1)
+    }
+    console.log(jc_2(5),jc_1(5))
+</script>
+</body>
+</html>
