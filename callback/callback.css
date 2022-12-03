@@ -1,0 +1,22 @@
+div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: relative;
+}
+
+.yuan1{
+    background: #449fdb;
+}
+.yuan2{
+    background: red;
+}
+.yuan3{
+    background: pink;
+}
+
+
+.dong {
+    margin-left: 1000px;
+    transition: margin-left 5s 0s;
+}
