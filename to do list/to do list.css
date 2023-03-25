@@ -1,0 +1,56 @@
+body {
+    background-image: url("backgroud.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0px -200px;
+    text-align: center;
+    height: 800px;
+    width: 100%;
+}
+.zhongjian{
+    margin-top: 100px;
+    display: inline-block;
+
+}
+input {
+    float: left;
+    border: gray solid 2px;
+    height: 30px;
+
+
+}
+.input {
+    float: left;
+    margin: 0 auto;
+    display: inline-block;
+    width: 544px;
+
+}
+.add {
+
+    float: left;
+    width: 40px;
+    height: 36px;
+    border-left: 0px;
+    background-color: rgba(9,170,177);
+}
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+li {
+    padding: 0 30px;
+    width: 700px;
+    font-size: 16px;
+    line-height: 1.5em;
+    display: inline-block;
+    position: relative;
+
+    background-color: aliceblue;
+}
+span {
+    position: absolute;
+    right: 0px;
+    color: brown;
+}

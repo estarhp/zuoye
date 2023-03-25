@@ -1,0 +1,66 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.top {
+    width: 100vw;
+    height: 50px;
+    background-color: #718093;
+
+
+}
+
+.ban {
+    width: 60vw;
+    height: 900px;
+    background-color: pink;
+    display: inline-block;
+}
+.ban img {
+    height: 60px;
+    float: left;
+}
+.ban>div {
+    height: 60px;
+    text-align: left;
+    line-height: 60px;
+}
+
+body {
+    text-align: center;
+}
+
+.login-sign {
+   float: right;
+   margin-right: 10vw;
+   font-size: 18px;
+}
+
+h1 {
+    float: left;
+    margin-left: 10vw;
+}
+
+.send {
+    position: fixed;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 20px;
+    height: 30px;
+    width: 200px;
+    background: red;
+}
+
+.send>input {
+    height: 27px;
+    width: 165px;
+}
+
+.submit {
+
+    height: 30px;
+    width: 31px;
+}
